@@ -1,3 +1,4 @@
 class Speciality < ApplicationRecord
-    has_many :doctors
+    has_many :join_doctor_specialities
+    has_many :doctors, through: :join_doctor_specialities
 end
